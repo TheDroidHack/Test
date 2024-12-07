@@ -1,7 +1,7 @@
 // Function to load navbar, footer, and sidebar dynamically
 window.onload = function () {
   // Load Navbar
-  fetch('/navbar.html')
+  fetch('../navbar.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('navbar-placeholder').innerHTML = data;
@@ -12,7 +12,7 @@ window.onload = function () {
     .catch(error => console.error('Error loading navbar:', error));
 
   // Load Footer
-  fetch('/footer.html')
+  fetch('../footer.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('footer-placeholder').innerHTML = data;
